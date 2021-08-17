@@ -1,0 +1,70 @@
+<div class="articles-and-sidebar">
+    <div class="article-module">
+        <div class="article-grid">
+            <div class="ui card" *ngFor="let blog of blogs">
+                <div class="image">
+                    <img src={{blog.image}}>
+                </div>
+                <div class="content">
+                    <div class="tags">
+                        <a>{{blog.tag}}</a>
+                    </div>
+                    <h2>
+                        <a href="">
+                            {{blog.header}} </a>
+                    </h2>
+                    <p> {{blog.content}}</p>
+                </div>
+
+                <div class="author-row">
+                    <a href="" aria-label="Author page of Mike Neumegen">
+                        <img alt="Avatar of Mike Neumegen" src={{blog.authorimage}} class="avatar">
+                    </a>
+                    <div>
+                        <a class="author-name" href="">
+                            {{blog.author}} </a>
+                        on
+                        <time datetime="">
+                            {{blog.date}}</time>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modules">
+            <div id="all-modules">
+                <div class="single-module">
+                    <div class="module">
+                        <a href="">
+                            <img src="https://cdn4.buysellads.net/uu/7/87530/1622125818-Css-tricks-2.png" alt=""
+                                height="300" width="300">
+                        </a>
+                    </div>
+                    <div class="interlude">
+                        <a class="spon-title" href="">Sponsored</a>
+                        <a href="">Create custom forms and embed them in your site. Sync with 100+ apps. No coding or
+                            plugins required!</a>
+
+                    </div>
+                </div>
+                <div class="single-module">
+                    <div class="module">
+                        <a href="">
+                            <img src="https://cdn4.buysellads.net/uu/7/87530/1622125818-Css-tricks-2.png" alt=""
+                                height="300" width="300">
+                        </a>
+                    </div>
+                    <div class="interlude">
+                        <a class="spon-title" href="">Sponsored</a>
+                        <a href="">Create custom forms and embed them in your site. Sync with 100+ apps. No coding or
+                            plugins required!</a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</div>

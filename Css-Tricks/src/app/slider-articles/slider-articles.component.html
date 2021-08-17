@@ -1,0 +1,39 @@
+<div class="popular-articles ">
+    <div class="popular-header header-card">
+        <h2 class="header-card-title">
+            Popular
+            <br>
+            this
+            <br>
+            month
+        </h2>
+        <p class="header-card-sponsor">
+            Sponsored by
+            <br>
+            <a href="">Frontend Masters</a>
+        </p>
+    </div>
+    <div class="mini-card-grid">
+        <article class="mini-card" *ngFor="let article of dataSource">
+            <time datetime="2021-08-11">
+                <strong>Article</strong>
+                {{article.date}}
+            </time>
+            <h3 class="mini-card-title">
+                <a href="">
+                    {{article.minicardtitle}}
+                </a>
+            </h3>
+            <div class="tags">
+                <a href="" *ngFor="let tag of article.tag">{{tag}}</a>
+            </div>
+            <div class="author-row">
+                <a href="" aria-label="Author page of Georgi Nikoloff">
+                    <img alt="" src={{article.authorimage}} class="avatar"> </a>
+                <a class="author-name" href="">
+                    {{article.author}} </a>
+            </div>
+        </article>
+
+    </div>
+</div>

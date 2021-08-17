@@ -1,0 +1,15 @@
+
+.header-icon{
+    font-size: x-large;
+    color: white;
+}
+.item-hover:hover{
+
+    color: orangered;
+}
+.search-login{
+    position: fixed;
+    z-index: 15;
+    top: .9rem;
+    right: 3rem;
+}
