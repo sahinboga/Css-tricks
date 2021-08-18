@@ -3,9 +3,7 @@
     width: 90%;
 }
 .imageandtext{
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: 50% 50%;
+    
     background: #111;
 }
 .image{
@@ -72,4 +70,23 @@
 }
 .author-name:hover{
     opacity: .8;
+}
+@media screen and (max-width:960px) {
+    .container{
+        width:600px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:620px) {
+    .container{
+        width:300px;
+        margin: auto;
+    }
+}
+@media screen and (min-width:960px) {
+    .imageandtext{
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 50% 50%;
+    }
 }

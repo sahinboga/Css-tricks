@@ -1,7 +1,9 @@
-
 .header-icon{
     font-size: x-large;
     color: white;
+}
+.nav-links{
+    display: flex;
 }
 .item-hover:hover{
 
@@ -13,3 +15,22 @@
     top: .9rem;
     right: 3rem;
 }
+@media (max-width: 620px){
+    .ui.inverted.segment {
+        padding-top: 15px;
+    }
+    .nav-links{
+        overflow-x: scroll;
+    }
+    .ui.menu{
+        display: block;
+        max-width: 380px;
+    }
+}
+@media (max-width: 1000px){
+    .ui.inverted.segment {
+        padding: 20px 20px 0;
+        flex-wrap: wrap;
+    }
+}
+

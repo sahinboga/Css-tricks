@@ -7,7 +7,6 @@
     color: #fff;
 }
 .footer-inside{
-    max-width: var(--maxWidth);
     margin: 0 auto;
     padding: 0 3rem;
 }
@@ -107,4 +106,21 @@ button, input{
 }
 .link-grid span {
     opacity: .3;
+}
+@media (max-width: 800px)
+{
+    .site-footer {
+    margin-top: 20rem;
+
+    }
+    .footer-message-and-form,.link-grid{
+        display: block;
+    }
+    .footer-inside{
+        padding: 0;
+    }
+    .footer-form-wrap{
+        margin-top:0 ;
+    }
+
 }

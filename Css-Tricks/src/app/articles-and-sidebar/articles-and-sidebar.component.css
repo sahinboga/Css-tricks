@@ -117,3 +117,12 @@ a.spon-title {
     color: #434343;
     display: block;
 }
+@media (max-width: 800px)
+{.articles-and-sidebar,.article-module {
+    display: block;
+    padding-top: 0;
+}
+    .modules{
+        margin-left: 0;
+    }
+}
